@@ -1,4 +1,4 @@
-package javaapplication16;
+package org.example;
 
 import java.util.*;
 
