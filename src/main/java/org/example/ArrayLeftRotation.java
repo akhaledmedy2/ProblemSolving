@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrayLeftRotation {
@@ -23,22 +24,34 @@ public class ArrayLeftRotation {
         a.add(32);
         a.add(81);
 
+//        int d = 4;
+//        List<Integer> a = new ArrayList<>();
+//        a.add(1);
+//        a.add(2);
+//        a.add(3);
+//        a.add(4);
+//        a.add(5);
+
+
         List<Integer> result = rotLeft(a, d);
         result.stream().forEach(System.out::println);
 
     }
 
     public static List<Integer> rotLeft(List<Integer> a, int d) {
+        Integer[] result = new Integer[a.size()];
 
-        for (int i = 0; i < d; i++) {
-            int temp = a.get(0);
-            for (int j = 0; j < a.size() - 1; j++) {
-                a.set(j, a.get(j + 1));
+        for (int i = 0; i < a.size(); i++) {
+            if (d > i) {
+                result[a.size() - d + i] = a.get(i);
+            } else {
+                result[i - d] = a.get(i);
             }
-            a.set(a.size() - 1, temp);
+
         }
 
-        return a;
+
+        return Arrays.asList(result);
     }
 
 
