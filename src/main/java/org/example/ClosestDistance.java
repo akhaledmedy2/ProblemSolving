@@ -14,8 +14,8 @@ public class ClosestDistance {
     // Returns the distance between the two closest numbers.
     static int findClosestDistance(List<Integer> numbers) {
         // try to implement it!
-        numbers = new ArrayList<>();
-        numbers.add(1);
+//        numbers = new ArrayList<>();
+//        numbers.add(1);
         Collections.sort(numbers);
         List<Integer> distances = new ArrayList<>();
         if (!numbers.isEmpty()) {
