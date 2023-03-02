@@ -18,7 +18,7 @@ public class PlusOne {
             }
             BigInteger bigInteger = new BigInteger(sb.toString());
             bigInteger = bigInteger.add(new BigInteger("1"));
-            
+
             String numberString = String.valueOf(bigInteger);
 
             digits = new int[numberString.length()];
