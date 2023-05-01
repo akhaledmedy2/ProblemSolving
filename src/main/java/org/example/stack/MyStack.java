@@ -1,7 +1,5 @@
 package org.example.stack;
 
-import sun.misc.Queue;
-
 import java.util.ArrayList;
 import java.util.List;
 
